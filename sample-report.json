@@ -1,0 +1,202 @@
+{
+  "options": "vanir scan --target /home/user/android-source --output report.json",
+  "covered_cves": [
+    "CVE-2022-20611", "CVE-2022-20478", "CVE-2023-21120", "CVE-2022-20347",
+    "CVE-2022-20142", "CVE-2022-20415", "CVE-2023-20956", "CVE-2023-21292",
+    "CVE-2023-20944", "CVE-2023-40074", "CVE-2022-20490", "CVE-2022-20491",
+    "CVE-2023-21085", "CVE-2023-21086", "CVE-2023-21087", "CVE-2024-10001",
+    "CVE-2024-10002", "CVE-2021-39801", "CVE-2021-39802", "CVE-2021-39803"
+  ],
+  "missing_patches": [
+    {
+      "ID": "ASB-A-242996180",
+      "CVE": ["CVE-2022-20611"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-242996180",
+      "details": [
+        {
+          "unpatched_code": "services/core/java/com/android/server/pm/PackageManagerService.java::deletePackageVersioned",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/2e42c393f2d5521d20acd9281d411a0fbc6196c3",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-242996180-977b42e9"
+        },
+        {
+          "unpatched_code": "services/core/java/com/android/server/pm/DeletePackageHelper.java::deletePackageVersionedInternal",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/3ac6aa1e4daeb646bdb40813e988d1013d72150c",
+          "is_non_target_match": true,
+          "matched_signature": "ASB-A-242996180-678072e1"
+        }
+      ]
+    },
+    {
+      "ID": "ASB-A-241764135",
+      "CVE": ["CVE-2022-20478"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-241764135",
+      "details": [
+        {
+          "unpatched_code": "core/java/android/app/NotificationChannel.java::NotificationChannel",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/abc123",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-241764135-aabbccdd"
+        },
+        {
+          "unpatched_code": "core/java/android/app/NotificationChannelGroup.java::NotificationChannelGroup",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/abc124",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-241764135-eeff0011"
+        },
+        {
+          "unpatched_code": "core/java/android/app/NotificationChannelGroup.java::writeToParcel",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/abc125",
+          "is_non_target_match": true,
+          "matched_signature": "ASB-A-241764135-22334455"
+        }
+      ]
+    },
+    {
+      "ID": "ASB-A-258188673",
+      "CVE": ["CVE-2023-21120"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-258188673",
+      "details": [
+        {
+          "unpatched_code": "external/dng_sdk/source/dng_image.cpp::ReadTile",
+          "patch": "https://android.googlesource.com/platform/external/dng_sdk/+/ghi789",
+          "is_non_target_match": true,
+          "matched_signature": "ASB-A-258188673-55667788"
+        },
+        {
+          "unpatched_code": "external/dng_sdk/source/dng_host.cpp::MakeHost",
+          "patch": "https://android.googlesource.com/platform/external/dng_sdk/+/ghi790",
+          "is_non_target_match": true,
+          "matched_signature": "ASB-A-258188673-99aabbcc"
+        }
+      ]
+    },
+    {
+      "ID": "ASB-A-228450811",
+      "CVE": ["CVE-2022-20347"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-228450811",
+      "details": [
+        {
+          "unpatched_code": "src/com/android/settings/connecteddevice/ConnectedDeviceDashboardFragment.java::onAttach",
+          "patch": "https://android.googlesource.com/platform/packages/apps/Settings/+/def456",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-228450811-11223344"
+        }
+      ]
+    },
+    {
+      "ID": "ASB-A-216631962",
+      "CVE": ["CVE-2022-20142"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-216631962",
+      "details": [
+        {
+          "unpatched_code": "core/java/android/hardware/location/GeofenceHardwareRequestParcelable.java::createFromParcel",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/jkl012",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-216631962-aabb1122"
+        },
+        {
+          "unpatched_code": "kernel/drivers/staging/android/binder.c::binder_transaction",
+          "patch": "https://android.googlesource.com/kernel/common/+/jkl013",
+          "is_non_target_match": true,
+          "matched_signature": "ASB-A-216631962-ccdd3344"
+        }
+      ]
+    },
+    {
+      "ID": "ASB-A-231322873",
+      "CVE": ["CVE-2022-20415"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-231322873",
+      "details": [
+        {
+          "unpatched_code": "packages/SystemUI/src/com/android/systemui/statusbar/phone/StatusBarNotificationActivityStarter.java::handleFullScreenIntent",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/mno345",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-231322873-55661122"
+        },
+        {
+          "unpatched_code": "packages/SystemUI/src/com/android/systemui/statusbar/notification/NotificationInterruptionStateProvider.java::shouldHeadsUp",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/mno346",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-231322873-77883344"
+        },
+        {
+          "unpatched_code": "packages/SystemUI/src/com/android/systemui/statusbar/notification/interruption/NotificationInterruptStateProviderImpl.java::shouldHeadsUpWhenAwake",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/mno347",
+          "is_non_target_match": true,
+          "matched_signature": "ASB-A-231322873-99005566"
+        }
+      ]
+    },
+    {
+      "ID": "ASB-A-240140929",
+      "CVE": ["CVE-2023-20956"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-240140929",
+      "details": [
+        {
+          "unpatched_code": "media/codec2/vndk/platform/C2SurfaceSyncObj.cpp::C2SurfaceSyncMemory::Import",
+          "patch": "https://android.googlesource.com/platform/frameworks/av/+/pqr678",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-240140929-aabb5566"
+        }
+      ]
+    },
+    {
+      "ID": "ASB-A-236688380",
+      "CVE": ["CVE-2023-21292"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-236688380",
+      "details": [
+        {
+          "unpatched_code": "services/core/java/com/android/server/am/ActivityManagerService.java::openContentUri",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/stu901",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-236688380-ccdd7788"
+        },
+        {
+          "unpatched_code": "services/core/java/com/android/server/am/ActivityManagerService.java",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/stu902",
+          "is_non_target_match": true,
+          "matched_signature": "ASB-A-236688380-eeff9900"
+        }
+      ]
+    },
+    {
+      "ID": "ASB-A-244154558",
+      "CVE": ["CVE-2023-20944"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-244154558",
+      "details": [
+        {
+          "unpatched_code": "core/java/android/accounts/ChooseTypeAndAccountActivity.java::run",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/vwx234",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-244154558-11221133"
+        }
+      ]
+    },
+    {
+      "ID": "ASB-A-247513680",
+      "CVE": ["CVE-2023-40074"],
+      "OSV": "https://osv.dev/vulnerability/ASB-A-247513680",
+      "details": [
+        {
+          "unpatched_code": "core/java/android/os/PersistableBundle.java::saveToXml",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/yza567",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-247513680-33445577"
+        },
+        {
+          "unpatched_code": "core/java/android/os/PersistableBundle.java::restoreFromXml",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/yza568",
+          "is_non_target_match": false,
+          "matched_signature": "ASB-A-247513680-55667799"
+        },
+        {
+          "unpatched_code": "core/java/android/os/PersistableBundle.java::PersistableBundle",
+          "patch": "https://android.googlesource.com/platform/frameworks/base/+/yza569",
+          "is_non_target_match": true,
+          "matched_signature": "ASB-A-247513680-778899bb"
+        }
+      ]
+    }
+  ]
+}

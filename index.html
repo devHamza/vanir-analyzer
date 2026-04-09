@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vanir Analyzer — Android CVE & Missing Patch Report Viewer</title>
+    <meta name="description" content="Free online tool to analyze Google Vanir security scan reports. Upload your Vanir JSON output to visualize unpatched Android CVEs, missing patches, CVSS severity scores, and affected components. Enrich results with OSV data and export PDF reports." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vanir Analyzer — Android CVE & Missing Patch Report Viewer" />
+    <meta property="og:description" content="Upload a Vanir JSON report to get an interactive dashboard of unpatched Android CVEs, severity breakdowns, component charts, and exportable PDF reports. Fully client-side, no data leaves your browser." />
+    <meta property="og:site_name" content="Vanir Analyzer" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vanir Analyzer — Android CVE Report Viewer" />
+    <meta name="twitter:description" content="Visualize and triage unpatched Android CVEs from Google Vanir scan reports. Free, open-source, client-side." />
+
+    <!-- SEO -->
+    <meta name="keywords" content="Vanir, Android security, CVE analyzer, missing patches, AOSP vulnerability scanner, Android patch gap, OSV, CVSS, security report viewer, Android CVE dashboard, Vanir report, Google Vanir, Android security bulletin, ASB, patch management" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://vanir-analyzer.pages.dev/" />
+
+    <!-- Structured data for LLM / rich search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Vanir Analyzer",
+      "alternateName": "Vanir Report Analyzer",
+      "description": "A free, client-side web tool that parses Google Vanir security scan JSON reports and displays an interactive dashboard of unpatched Android CVEs, severity scores, affected components, and missing patches. Supports OSV enrichment, filtering, and PDF/CSV export.",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": [
+        "Upload and parse Vanir JSON scan reports",
+        "Dashboard with CVE metrics and severity breakdown",
+        "Component classification: Kernel, System AOSP, Vendor MediaTek, External libs, DNG SDK, Prebuilts",
+        "Interactive charts: CVEs by component, CVEs by year, top CVEs by match count",
+        "Filterable and sortable CVE table with direct match and non-target match indicators",
+        "Lazy on-demand OSV API enrichment with CVSS scores and severity labels",
+        "Bulk severity loading for all CVEs",
+        "CSV, enriched JSON, and PDF report export",
+        "Fully client-side: no data uploaded to any server",
+        "Dark and light theme support"
+      ],
+      "softwareHelp": {
+        "@type": "CreativeWork",
+        "name": "Vanir Analyzer Documentation",
+        "url": "https://github.com/devHamza/vanir-analyzer"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-sans">
+    <!-- SEO: crawlable content for SPA -->
+    <noscript>
+      <h1>Vanir Analyzer — Android CVE & Missing Patch Report Viewer</h1>
+      <p>Vanir Analyzer is a free, open-source web tool for analyzing Google Vanir security scan reports. Upload your Vanir JSON output to visualize unpatched Android CVEs, missing security patches, CVSS severity scores, and affected AOSP components. All processing happens in your browser — no data is sent to any server.</p>
+      <h2>Features</h2>
+      <ul>
+        <li>Parse and visualize Vanir scan JSON reports</li>
+        <li>Interactive dashboard with CVE metrics, component breakdown charts, and year distribution</li>
+        <li>Filterable CVE table with direct match and non-target match classification</li>
+        <li>On-demand OSV API enrichment for CVSS scores and vulnerability details</li>
+        <li>Export reports as CSV, enriched JSON, or professional PDF</li>
+      </ul>
+      <p>This application requires JavaScript to run.</p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
