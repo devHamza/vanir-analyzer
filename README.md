@@ -4,7 +4,7 @@
 
 Vanir Analyzer is a free, open-source web tool that parses the JSON output of `vanir scan` and turns it into an interactive dashboard — with charts, severity enrichment, filtering, and exportable reports. Fully client-side: your security data never leaves the browser.
 
-> **Live demo:** [vanir-analyzer.pages.dev](https://vanir-analyzer.pages.dev) *(update with your actual URL)*
+> **Live demo:** [devhamza.github.io/vanir-analyzer/](https://devhamza.github.io/vanir-analyzer/)
 
 ---
 
